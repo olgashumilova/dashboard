@@ -1,0 +1,159 @@
+.header {
+    max-width: 1298px;
+    top: 0;
+    left: 70px;
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+
+        .header__upper-part {
+            display: flex;
+            flex-direction: row;
+            flex: auto;
+            border: #f8f8f8 solid;
+
+            .header__menu {
+                background: url(../img/header/menu.png) no-repeat center;
+                @include header__button;
+        }
+
+            .header__folder {
+                background: url(../img/header/folder.png) no-repeat center;
+                @include header__button;
+        }
+
+            .header__settings {
+                background: url(../img/header/header-settings.png) no-repeat center;
+                margin-right: 187px;
+                @include header__button;
+        }
+    
+            .header__form {
+                position: relative;
+                margin-top: 20px;
+                margin-right: 40px;
+
+                .header__search-box {
+                    width: 300px;
+                    font-size: 12px;
+                    font-family: $font;
+                    padding: 8px;
+                    border-radius: 15px;
+                    border: none;
+                    background: #f8f8f8;
+            }
+
+                .header__submit-button {
+                    position: absolute;
+                    right: 15px;
+                    top: 8px;
+                    padding: 8px;
+                    border: none;
+                    background: url(../img/header/zoom-in.png);
+                    cursor: pointer;
+                    
+            }
+        }
+
+        .header__upload {
+            background: url(../img/header/upload.png) no-repeat center;
+            @include header__button;
+        }
+        
+        .header__mail {
+            background: url(../img/header/mail.png) no-repeat center;
+            @include header__button;
+        }
+        
+        .header__world {
+            background: url(../img/header/world.png) no-repeat center;
+            @include header__button;
+        }
+        
+        .header__profile {
+            display: flex;
+            flex-direction: row;
+        }
+
+            .header__profile-description {
+                margin-top: 22px;
+                margin-left: 18px;
+        }
+
+            .header__profile-name {
+                font: $font-bold;
+                color: #a83444;
+        }
+
+            .header__profile-job {
+                font: $font-regular;
+                color: #BFBFBF;
+        }
+
+        .hamburger-menu {
+            @include hamburger-menu;
+        }
+
+        .hamburger-menu::before {
+            @include hamburger-menu-before;
+        }
+
+        .hamburger-menu::after {
+            @include hamburger-menu-after;
+        }
+    }
+}
+
+    .header__lower-part {
+        display: flex;
+        flex-direction: row;
+
+        .header__daily {
+            display: flex;
+            flex-direction: row;
+
+            .header__daily-part {
+                margin: 22px 40px 22px 43px;
+
+                .header__daily-title{
+                    @include title;
+                }
+
+                .header__daily-main {
+                    @include daily__main;
+                }
+
+                .header__daily-numbers {
+                    display: flex;
+                    flex-direction: row;
+
+                    .number {
+                        @include number;
+                    }
+                    
+                    .number:before {
+                        border-style: solid;
+                        border-width: 0 3px 6px 3px;
+                        border-color: transparent transparent #0a899f transparent;
+
+                    }
+                    
+                }
+
+                }
+            }
+
+            .header__add {
+                margin-top: 22px;
+
+                .header__add-button {
+                    border: none;
+                    text-decoration: none;
+                    background: url(../img/header/add.png) no-repeat left;
+                }
+        }
+
+    }
+
+}

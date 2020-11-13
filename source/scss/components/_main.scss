@@ -1,0 +1,135 @@
+.main {
+    max-width: 1025px;
+    background: #ebebeb;
+
+    .main__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: auto;
+        margin: 20px;
+
+        .main__progress {
+            background: #ffffff;
+        }
+
+        .main__progress-header {
+            display: flex;
+            flex-direction: row;
+
+            .main__progress-heading {
+                margin: 31px;
+                @include title;
+            }
+
+            .main__progress-buttons {
+                margin-left: 250px;
+                margin-top: 30px;
+                margin-right: 22px;
+
+                .main__progress-button {
+                    font-size: 12px;
+                    font-family: $font;
+                    color: #bfbfbf;
+                    border: none;
+                    background: none;
+                }
+
+                .main__progress-button:hover {
+                    padding: 7px 10px;
+                    border-radius: 20px;
+                    background: $gradient;
+                }
+            }
+        }
+
+        .main__progress-picture {
+            max-width: 664px;
+            padding: 86px 332px;
+            background: url(../img/main/graphics.png) 100%;
+        }
+
+        .main__reused-container {
+            max-width: 264px;
+            margin-left: 19px;
+            background: #ffffff;
+
+            .main__reused-header {
+                margin: 31px 75px 5px 75px;
+                @include title;
+            }
+
+            .main__revenue-picture {
+                padding: 73px 93.5px;
+                background: url(../img/main/revenue.png) no-repeat center;
+            }
+
+            .main__reused-numbers {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .number {
+                    margin-top: 15px;
+                    @include number;
+                }
+            }
+        }
+
+        .main__feed {
+            max-width: 467px;
+            margin: 19px 0px;
+            background: #ffffff;
+
+            .main__feed-header{
+                margin: 30px;
+                @include title;
+            }
+
+            .main__feed-main {
+                display: flex;
+                flex-direction: row;
+
+                .main__feed-pictures {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 20px 30px;
+                }
+
+                .main__feed-text {
+                    margin-right: 30px;
+                    font-family: $font;
+                    font-size: 12px;
+                    color: #bfbfbf;
+
+                    .main__feed-span {
+                        color: #777777;
+                    }
+
+                    .main__feed-upper-text {
+                        max-width: 345px;
+                        padding: 19px;
+                        background: #fcfcfc;
+                    }
+
+                    .main__feed-sophie-text {
+                        max-width: 316px;
+                        margin: 19px 0px 19px 49px;
+                        padding: 19px;
+                        background: #fcfcfc;
+                    }
+
+                    .main__feed-lower-text {
+                        max-width: 345px;
+                        margin: 19px 0px;
+                        padding: 19px;
+                        background: #fcfcfc;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

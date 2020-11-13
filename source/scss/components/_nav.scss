@@ -1,0 +1,58 @@
+.navigation {
+    max-width: 70px;
+    background: $gradient;
+
+    .navigation__logo {
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+
+    .navigation__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include navigation__font;
+
+        .navigation__home-picture {
+            background: url(../img/navigation/home.png) no-repeat center;
+            @include navigation__picture;
+        }
+
+        .navigation__statistics-picture {
+            background: url(../img/navigation/statistics.png) no-repeat center;
+            @include navigation__picture;
+        }
+
+        .navigation__users-picture {
+            background: url(../img/navigation/users.png) no-repeat center;
+            @include navigation__picture;
+        }
+
+        .navigation__settings-picture {
+            background: url(../img/navigation/settings.png) no-repeat center;
+            @include navigation__picture;
+        }
+
+        .navigation__quires-picture {
+            background: url(../img/navigation/quires.png) no-repeat center;
+            @include navigation__picture;
+        }
+    }
+    
+    .navigation__link {
+        @include navigation__link;
+    }
+
+    .navigation__menu-element:hover::after {
+        background: green;
+        @include navigation__triangle;
+    }
+
+    .navigation__button {
+        margin: 560px 0px 19px 23px;
+        padding: 10px;
+        border: none;
+        background: url(../img/navigation/button.png);
+}
+
+
+}
