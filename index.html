@@ -3,44 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="source/style/main.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
 
     <div class="wrap">
-        <!-- <div class="inner-container">
 
-        </div> -->
         <nav class="navigation">
-            <div class="navigation_container">
 
+            <div class="navigation_container">
+                <img class="navigation__logo" src="./source/img/navigation/logo.png" alt="logo">
+                <ul class="navigation__menu">
+                    <li class="navigation__menu-element">
+                        <a class="navigation__link"href="#">
+                            <div class="navigation__home-picture"></div>
+                            <p class="navigation__home-text">Home</p>
+                        </a>
+                    </li>
+                    <li class="navigation__menu-element">
+                        <a class="navigation__link"href="#">
+                            <div class="navigation__statistics-picture"></div>
+                            <div class="navigation__statistics-text">Statistics</div>
+                        </a>
+                    </li>
+                    <li class="navigation__menu-element">
+                        <a class="navigation__link"href="#">
+                            <div class="navigation__users-picture"></div>
+                            <div class="navigation__users-text">Users</div>
+                        </a>
+                    </li>
+                    <li class="navigation__menu-element">
+                        <a class="navigation__link"href="#">
+                            <div class="navigation__settings-picture"></div>
+                            <div class="navigation__settings-text">Settings</div>
+                        </a>
+                    </li>
+                    <li class="navigation__menu-element">
+                        <a class="navigation__link"href="#">
+                            <div class="navigation__quires-picture"></div>
+                            <div class="navigation__quires-text">Quires</div>
+                        </a>
+                    </li>
+                </ul>
+                <button class="navigation__button"><a href="#"></a></button>
             </div>
+
         </nav>
 
-        <header class="header">
-            <div class="header__container">
+        <div class="container">
+
+            <header class="header">
+
+                <div class="header__container">
+    
+                    <div class="header__upper-part">
+                        <div class="header__left-buttons">
+                            <button class="header__menu"><a href="#"></a></button>
+                            <button class="header__folder"><a href="#"></a></button>
+                            <button class="header__settings"><a href="#"></a></button>
+                        </div>
+        
+                        <div class="header__form">
+                            <label>
+                                <input class="header__search-box" type="search" placeholder="Search Anything Here...">
+                                <button class="header__submit-button" type="submit" alt="Submit"></button>
+                            </label>
+                        </div>
+        
+                        <div class="header__right-buttons">
+                            <button class="header__upload"><a href="#"></a></button>
+                            <button class="header__mail"><a href="#"></a></button>
+                            <button class="header__world"><a href="#"></a></button>
+                        </div>
+        
+                        <div class="header__profile">
+                            <div class="header__profile-pic">
+                                <img src="./source/img/header/kendall.png" alt="Kendall Jenner">
+                            </div>
+                            
+                            <div class="header__profile-description">
+                                <p class="header__profile-name">Kendall Jenner</p>
+                                <p class="header__profile-job">Chief Authority</p>
+                            </div>
+        
+                            <div class="hamburger-menu"></div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="header__lower-part">
+    
+                        <div class="header__daily">
+
+                            <div class="header__daily-part">
+                                <p class="header__daily-title">Daily Visitors</p>
+                                <p class="header__daily-main">150,000</p>
+                                <div class="header__daily-numbers">
+                                    <p class="number">1020</p>
+                                    <p class="number">1020</p>
+                                </div>
+                            </div>
+                                
+                            <div class="header__daily-part">
+                                <p class="header__daily-title">Daily Customers</p>
+                                <p class="header__daily-main">120,0000</p>
+                                <div class="header__daily-numbers">
+                                    <p class="number">1020</p>
+                                    <p class="number">1020</p>
+                                </div>
+                            </div>
+    
+                            <div class="header__daily-part">
+                                <p class="header__daily-title">Daily Orders</p>
+                                <p class="header__daily-main">900,000</p>
+                                <div class="header__daily-numbers">
+                                    <p class="number">1020</p>
+                                    <p class="number">1020</p>
+                                </div>
+                            </div>
+
+                            <div class="header__daily-part">
+                                <p class="header__daily-title">Daily Sales</p>
+                                <p class="header__daily-main">850,000</p>
+                                <div class="header__daily-numbers">
+                                    <p class="number">1020</p>
+                                    <p class="number">1020</p>
+                                </div>
+                            </div>
+
+                            <div class="header__daily-part">
+                                <p class="header__daily-title">Daily Shipments</p>
+                                <p class="header__daily-main">750,000</p>
+                                <div class="header__daily-numbers">
+                                    <p class="number">1020</p>
+                                    <p class="number">1020</p>
+                                </div>
+                            </div>
+
+                            <div class="header__daily-part">
+                                <p class="header__daily-title">Daily Revenue</p>
+                                <p class="header__daily-main">$985,0000</p>
+                                <div class="header__daily-numbers">
+                                    <p class="number">1020</p>
+                                    <p class="number">1020</p>
+                                </div>
+                            </div>
+
+                            <div class="header__daily-part">
+                                <p class="header__daily-title">Daily Reviews</p>
+                                <p class="header__daily-main">600,000</p>
+                                <div class="header__daily-numbers">
+                                    <p class="number">1020</p>
+                                    <p class="number">1020</p>
+                                </div>
+                            </div>
+
+                            <div class="header__add">
+                                <button class="header__add-button"><a href="#">Add statistics</a></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                        
+                </div>
+                  
+            </header>
+    
+            <div class="wrapper">
+
+                <main class="main">
+                    <div class="main__container">
+                        <div class="main__progress">
+                            <div class="main__progress-header">
+                                <p class="main__progress-heading">Monthly Revenue Progress</p>
+                                <div class="main__progress-buttons">
+                                    <button class="main__progress-button">Mounth</button>
+                                    <button class="main__progress-button">Day</button>
+                                    <button class="main__progress-button">Year</button>
+                                </div>
+                                <div class="hamburger-menu"></div>
+                            </div>
+                            <div class="main__progress-picture"></div>
+                        </div>
+
+                        <div class="main__reused-container">
+                            <p class="main__reused-header">Revenue Per Hour</p>
+                            <div class="main__revenue-picture"></div>
+                            <div class="main__reused-numbers">
+                                <p class="number">1020</p>
+                                <p class="number">1020</p>
+                            </div>
+                        </div>
+
+                        <div class="main__feed">
+
+                            <div class="main__feed-header">
+                                <p class="main__feed-title">Customers Feed</p>
+                            </div>
+
+                            <div class="main__feed-main">
+
+                                <div class="main__feed-pictures">
+
+                                    <div class="main__feed-sophie-turner">
+                                        <img class="main__feed-sophie" src="./source/img/main/sophie.png" alt="Sophie Turner">
+                                        <p class="main__feed-sophie-status">10 Min Ago</p>
+                                    </div>
+                                    
+                                    <div class="main__feed-peter-quill">
+                                        <img class="main__feed-peter"src="./source/img/main/peter.png" alt="Peter Quill">
+                                        <p class="main__feed-peter-status">15 Min Ago</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="main__feed-text">
+                                    <p class="main__feed-upper-text"><span class="main__feed-span">Sophie Turner</span> is simply dummy text of the printing and 
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                                        since the 1500s, when an</p>
+
+                                    <p class="main__feed-sophie-text"><span class="main__feed-span">Sophie Turner</span> is simply dummy text of the printing and 
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                                        since the 1500s, when an</p>
+
+                                    <p class="main__feed-sophie-text"><span class="main__feed-span">Sophie Turner</span> is simply dummy text of the printing and 
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                                        since the 1500s, when an</p>
+
+                                    <p class="main__feed-lower-text"><span class="main__feed-span">Peter Quill</span> is simply dummy text of the printing and 
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the 1500s, when an</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            
+                <aside class="aside">
+                    <div class="aside__container">
+            
+                    </div>
+                </aside>
+            
+                <footer class="footer">
+                    <div class="footer__container">
+            
+                    </div>
+                        
+                </footer>
 
             </div>
-        </header>
+    
 
-        <main class="main">
-            <div class="main__container">
+        </div>
 
-            </div>
-        </main>
-
-        <aside class="aside">
-            <div class="aside__container">
-
-            </div>
-        </aside>
-
-        <footer class="footer">
-            <div class="footer__container">
-                
-            </div>
-        </footer>
+        
 
     </div>
     
