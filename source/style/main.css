@@ -366,6 +366,7 @@ textarea {
 }
 
 .wrap {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,7 +374,8 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 1368px;
+  max-width: 1370px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -389,8 +391,16 @@ textarea {
   max-width: 1298px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 100%;
+}
+
 .navigation {
-  max-width: 70px;
+  position: fixed;
+  max-width: 5.10%;
   background: -webkit-gradient(linear, left top, left bottom, from(#f97459), to(#fd5272));
   background: linear-gradient(#f97459 0%, #fd5272 100%);
 }
@@ -833,6 +843,12 @@ textarea {
   margin: 20px 30px;
 }
 
+.main .main__container .main__feed .main__feed-main .main__feed-pictures .main__feed-status {
+  font-family: "Lato";
+  font-size: 8px;
+  color: #979796;
+}
+
 .main .main__container .main__feed .main__feed-main .main__feed-text {
   margin-right: 30px;
   font-family: "Lato";
@@ -852,6 +868,7 @@ textarea {
 
 .main .main__container .main__feed .main__feed-main .main__feed-text .main__feed-sophie-text {
   max-width: 316px;
+  border: red solid;
   margin: 19px 0px 19px 49px;
   padding: 19px;
   background: #fcfcfc;
@@ -864,8 +881,40 @@ textarea {
   background: #fcfcfc;
 }
 
+.main .main__container .main__todays {
+  max-width: 501px;
+  margin: 19px 19px;
+  background: #ffffff;
+}
+
 .aside {
-  width: 237px;
-  background: darkgreen;
+  max-width: 237px;
+}
+
+.aside .aside__container {
+  font-family: "Lato";
+}
+
+.aside .aside__container .aside__buttons {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f97459), to(#fd5272));
+  background: linear-gradient(#f97459 0%, #fd5272 100%);
+}
+
+.aside .aside__container .aside__buttons .aside__left-button {
+  border: none;
+  padding: 15px 37px;
+  background: url(../img/aside/users.png) no-repeat center;
+}
+
+.aside .aside__container .aside__buttons .aside__middle-button {
+  border: none;
+  padding: 15px 37px;
+  background: url(../img/aside/chat-button.png) no-repeat center;
+}
+
+.aside .aside__container .aside__buttons .aside__right-button {
+  border: none;
+  padding: 15px 37px;
+  background: url(../img/aside/like.png) no-repeat center;
 }
 /*# sourceMappingURL=main.css.map */
