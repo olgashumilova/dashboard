@@ -7,6 +7,15 @@
     color: $color;
 }
 
+//Gradient For Text 
+
+@mixin gradient-text {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: $gradient-text;
+}
+
 //Hamburger Menu
 
 @mixin hamburger-menu {
@@ -69,7 +78,6 @@
     font-family: $font;
     font-weight: $font-bold;
     font-size: 20px;
-    color: #FD798B;
     margin: 9px 0px;
 }
 
@@ -91,6 +99,9 @@
     color: #bfbfbf;
 }
 
+// 
 // @media (max-width: 768px) {
-
+//     .navigation {
+//         display: none;
+//     }
 // }
