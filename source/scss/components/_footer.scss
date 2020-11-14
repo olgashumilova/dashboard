@@ -1,0 +1,60 @@
+.footer {
+
+    .footer__container {
+
+        .footer__title {
+            margin-top: 30px;
+            text-align: center;
+            @include title;
+        }
+
+        .footer__icons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 20px;
+
+            .footer__rdio-link {
+                margin: 15px;
+                padding: 27.5px;
+                border: none;
+                background: url(../img/footer/rdio.png) no-repeat;
+            }
+
+            .footer__css3-link {
+                margin: 15px;
+                padding: 27.5px;
+                border: none;
+                background: url(../img/footer/css3.png) no-repeat;
+            }
+
+            .footer__deviantart-link {
+                margin: 15px;
+                padding: 27.5px;
+                border: none;
+                background: url(../img/footer/deviantart.png) no-repeat;
+            }
+
+            .footer__xing-link {
+                margin: 15px;
+                padding: 27.5px;
+                border: none;
+                background: url(../img/footer/xing.png) no-repeat;
+            }
+
+            .footer__vimeo-link {
+                margin: 15px;
+                padding: 27.5px;
+                border: none;
+                background: url(../img/footer/vimeo.png) no-repeat;
+            }
+
+            .footer__vk-link {
+                margin: 15px;
+                padding: 27.5px;
+                border: none;
+                background: url(../img/footer/vk.png) no-repeat;
+            }
+        }
+    }
+}
