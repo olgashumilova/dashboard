@@ -2,6 +2,18 @@
     max-width: 1025px;
     background: #ebebeb;
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+    }
+
     .main__container {
         display: flex;
         flex-direction: row;
@@ -9,25 +21,29 @@
         flex: auto;
         margin: 20px;
 
-        .main__progress {
+        .main__graphics {
             background: #ffffff;
+
+            @include mobile {
+                overflow: scroll;
+            }
         }
 
-        .main__progress-header {
+        .main__graphics-header {
             display: flex;
             flex-direction: row;
 
-            .main__progress-heading {
+            .main__graphics-heading {
                 margin: 31px;
                 @include title;
             }
 
-            .main__progress-buttons {
+            .main__graphics-buttons {
                 margin-left: 250px;
                 margin-top: 30px;
                 margin-right: 22px;
 
-                .main__progress-button {
+                .main__graphics-button {
                     font-size: 12px;
                     font-family: $font;
                     color: #bfbfbf;
@@ -35,15 +51,14 @@
                     background: none;
                 }
 
-                .main__progress-button:hover {
-                    padding: 7px 10px;
+                .main__graphics-button:hover {
                     border-radius: 20px;
                     background: $gradient;
                 }
             }
         }
 
-        .main__progress-picture {
+        .main__graphics-picture {
             max-width: 664px;
             padding: 86px 332px;
             background: url(../img/main/graphics.png) 100%;
@@ -95,6 +110,12 @@
                     flex-direction: column;
                     justify-content: space-between;
                     margin: 20px 30px;
+
+                    .main__feed-status {
+                        font-family: $font;
+                        font-size: 8px;
+                        color: #979796;
+                    }
                 }
 
                 .main__feed-text {
@@ -102,6 +123,11 @@
                     font-family: $font;
                     font-size: 12px;
                     color: #bfbfbf;
+                    
+                    @include mobile {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
 
                     .main__feed-span {
                         color: #777777;
@@ -109,19 +135,29 @@
 
                     .main__feed-upper-text {
                         max-width: 345px;
+                        border: #bfbfbf solid;
+                        border-width: 1px;
                         padding: 19px;
                         background: #fcfcfc;
                     }
 
-                    .main__feed-sophie-text {
+                    .main__feed-middle-text {
                         max-width: 316px;
+                        border-left: #bfbfbf solid;
+                        border-width: 1px;
                         margin: 19px 0px 19px 49px;
                         padding: 19px;
                         background: #fcfcfc;
+
+                        .main__feed-sophie-text {
+                            padding: 19px 0px;
+                        }
                     }
 
                     .main__feed-lower-text {
                         max-width: 345px;
+                        border: #bfbfbf solid;
+                        border-width: 1px;
                         margin: 19px 0px;
                         padding: 19px;
                         background: #fcfcfc;
@@ -130,6 +166,62 @@
             }
         }
 
+        .main__todays {
+            max-width: 501px;
+            max-height: 245px;
+            margin: 19px 7px;
+            background: #ffffff;
+
+            .main__todays-title {
+                margin: 30px;
+                @include title;
+            }
+
+            .main__todays-checkbox {
+                max-height: 160px;
+                display: flex;
+                flex-direction: column;
+                overflow: auto;
+
+                .main__todays-checkbox-element {
+                    padding: 10px;
+                    margin-right: 25px;
+                    border-top: 1px solid #ededed;
+
+                    .main__todays-checkbox-title {
+                        font-family: $font;
+                        font-weight: $font-bold;
+                        font-size: 15px;
+                        color: #FD566F;
+                    }
+
+                    .main__todays-checkbox-text {
+                        font-family: $font;
+                        font-weight: $font-regular;
+                        font-size: 14px;
+                        color: #bfbfbf;
+                    }
+
+                    .main__todays-checkbox-time {
+                        padding-left: 30px;
+                        font-family: $font;
+                        font-weight: $font-bold;
+                        color: #9C9C9C;
+                        background: url(../img/main/clock-icon.png) no-repeat left;
+                    }
+                }
+            }
+        }
+
+        .main__progress-picture {
+            padding: 73px 93.5px;
+            background: url(../img/main/progress.png) no-repeat center;
+        }
+
+        .main__shipments-picture {
+            padding: 73px 93.5px;
+            background: url(../img/main/shipment.png) no-repeat center;
+        }
     }
 
 }

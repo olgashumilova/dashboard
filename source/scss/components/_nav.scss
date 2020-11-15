@@ -1,6 +1,16 @@
 .navigation {
-    max-width: 70px;
+    position: fixed;
+    max-width: 5.10%;
+    max-height: 100vh;
     background: $gradient;
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
 
     .navigation__logo {
         box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
@@ -10,6 +20,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         @include navigation__font;
 
         .navigation__home-picture {
@@ -42,13 +53,16 @@
         @include navigation__link;
     }
 
-    .navigation__menu-element:hover::after {
-        background: green;
-        @include navigation__triangle;
+    .navigation__menu-element:hover {
+        background: #c54556;
+    
+        .navigation__menu-elemnt::after {
+            @include navigation__triangle;
+        }
     }
 
     .navigation__button {
-        margin: 560px 0px 19px 23px;
+        margin: 207px 0px 19px 23px;
         padding: 10px;
         border: none;
         background: url(../img/navigation/button.png);

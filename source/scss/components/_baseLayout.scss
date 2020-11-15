@@ -1,7 +1,9 @@
 .wrap {
+    position: relative;
     display: flex;
     flex-direction: row;
-    max-width: 1368px;
+    max-width: 1370px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -10,4 +12,21 @@
     display: flex;
     flex-direction: row;
     max-width: 1298px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
 }

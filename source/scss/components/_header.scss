@@ -7,11 +7,22 @@
         display: flex;
         flex-direction: column;
 
+
         .header__upper-part {
             display: flex;
             flex-direction: row;
             flex: auto;
             border: #f8f8f8 solid;
+
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+            }
+
+            @include tablet {
+                display: flex;
+                flex-wrap: wrap;
+            }
 
             .header__menu {
                 background: url(../img/header/menu.png) no-repeat center;
@@ -74,6 +85,7 @@
         .header__profile {
             display: flex;
             flex-direction: row;
+            font-family: $font;
         }
 
             .header__profile-description {
@@ -82,16 +94,20 @@
         }
 
             .header__profile-name {
-                font: $font-bold;
+                font-weight: $font-bold;
                 color: #a83444;
         }
 
             .header__profile-job {
-                font: $font-regular;
+                font-weight: $font-regular;
+                font-size: smaller;
+                margin-top: 8px;
                 color: #BFBFBF;
         }
 
         .hamburger-menu {
+            padding: 20px;
+            background-color: red;
             @include hamburger-menu;
         }
 
@@ -109,12 +125,20 @@
         display: flex;
         flex-direction: row;
 
+        @include mobile {
+            overflow: scroll;
+        }
+
+        @include tablet {
+            overflow: scroll;
+        }
+
         .header__daily {
             display: flex;
             flex-direction: row;
 
             .header__daily-part {
-                margin: 22px 40px 22px 43px;
+                margin: 22px 30px 22px 43px;
 
                 .header__daily-title{
                     @include title;
@@ -122,6 +146,7 @@
 
                 .header__daily-main {
                     @include daily__main;
+                    @include gradient-text;
                 }
 
                 .header__daily-numbers {
@@ -145,12 +170,17 @@
             }
 
             .header__add {
-                margin-top: 22px;
+                margin-top: 32px;
 
                 .header__add-button {
+                    padding: 0px 20px;
                     border: none;
-                    text-decoration: none;
                     background: url(../img/header/add.png) no-repeat left;
+
+                    .header__add-link {
+                        text-decoration: none;
+                        color: #a83444;
+                    }
                 }
         }
 

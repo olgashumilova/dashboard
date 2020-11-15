@@ -19,6 +19,9 @@
 //Hamburger Menu
 
 @mixin hamburger-menu {
+    position: relative;
+    left: 50px;
+    top: 20px;
     display: none;
     width: 50px;
     height: 2px;
@@ -26,6 +29,7 @@
 }
 
 @mixin hamburger-menu-before {
+    position: absolute;
     content: '';
     width: 50px;
     height: 2px;
@@ -33,6 +37,7 @@
 }
 
 @mixin hamburger-menu-after {
+    position: absolute;
     content: '';
     width: 50px;
     height: 2px;
@@ -54,16 +59,17 @@
 }
 
 @mixin navigation__picture {
-    padding: 20px 0px;
+    padding: 20px 35px;
     margin-top: 30px;
 }
 
 @mixin navigation__triangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 5px 0 5px 4px;
-    border-color: transparent transparent transparent inherit;
+    position: absolute;
+    content: '';
+    top: 100px;
+    left: 70px;
+    border: 7px solid transparent;
+    border-left: 6px solid #c54556;
 }
 
 //Header
@@ -99,9 +105,16 @@
     color: #bfbfbf;
 }
 
-// 
-// @media (max-width: 768px) {
-//     .navigation {
-//         display: none;
-//     }
-// }
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin mobile {
+    @media (max-width: 415px) {
+        @content;
+    }
+
+}
