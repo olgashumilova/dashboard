@@ -1,30 +1,105 @@
 .aside {
-    max-width: 237px;
+    max-width: 273px;
+
+    @include mobile {
+        margin: 0 auto;
+        width: 100%;
+    }
 
     .aside__container {
         font-family: $font;
+        overflow: auto;
 
         .aside__buttons {
             background: $gradient;
 
             .aside__left-button {
                 border: none;
-                padding: 15px 37px;
+                padding: 15px 40px;
                 background: url(../img/aside/users.png) no-repeat center;
+            }
+
+            .aside__left-button:hover {
+                background-color: #c54556;
             }
 
             .aside__middle-button {
                 border: none;
-                padding: 15px 37px;
+                padding: 15px 50px;
                 background: url(../img/aside/chat-button.png) no-repeat center;
+            }
+
+            .aside__middle-button:hover {
+                background-color: #c54556;
             }
 
             .aside__right-button {
                 border: none;
-                padding: 15px 37px;
+                padding: 15px 15px 15px 70px;
                 background: url(../img/aside/like.png) no-repeat center;
             }
+
+            .aside__right-button:hover {
+                background-color: #c54556;
+            }
+
             
+        }
+
+        .aside__list-element {
+            display: flex;
+            flex-direction: row;
+            padding: 20px 10px;
+            border-bottom: #777777 solid;
+            border-width: 1px;
+            
+            .aside__list-text {
+                margin-left: 15px;
+
+                .aside__list-element-name {
+                    font-size: 15px;
+                    font-weight: $font-bold;
+                    margin-bottom: 8px;
+                    color: #777777;
+                }
+
+                .aside__list-element-job {
+                    font-size: 12px;
+                    font-weight: $font-regular;
+                    color: #BFBFBF;
+                }
+            }
+
+            .aside__button {
+                border: none;
+                padding: 10px;
+                background: url(../img/aside/chat.png) no-repeat;
+            }
+        }
+
+        .aside__form {
+            background: #fcfcfc;
+
+            .aside__search-box {
+                font-weight: $font-regular;
+                font-size: 10px;
+                color: #C0C0C0;
+                padding: 20px;
+                border: none;
+                background: #fcfcfc;
+            }
+
+            .aside__submit-button {
+                border: none;
+                padding: 10px 15px;
+                background: url(../img/aside/search.png) no-repeat;
+            }
+
+            .aside__edit-button {
+                border: none;
+                padding: 10px;
+                background: url(../img/aside/edit.png) no-repeat;
+            }
         }
 
     }
