@@ -11,11 +11,12 @@
         overflow: auto;
 
         .aside__buttons {
+            padding: 20px 0px;
             background: $gradient;
 
             .aside__left-button {
                 border: none;
-                padding: 15px 40px;
+                padding: 18px 40px;
                 background: url(../img/aside/users.png) no-repeat center;
             }
 
@@ -25,7 +26,7 @@
 
             .aside__middle-button {
                 border: none;
-                padding: 15px 50px;
+                padding: 18px 50px;
                 background: url(../img/aside/chat-button.png) no-repeat center;
             }
 
@@ -35,7 +36,7 @@
 
             .aside__right-button {
                 border: none;
-                padding: 15px 15px 15px 70px;
+                padding: 18px 15px 18px 80px;
                 background: url(../img/aside/like.png) no-repeat center;
             }
 

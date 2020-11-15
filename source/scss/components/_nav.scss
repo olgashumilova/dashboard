@@ -1,7 +1,6 @@
 .navigation {
     position: fixed;
-    max-width: 5.10%;
-    max-height: 100vh;
+    max-width: 70px;
     background: $gradient;
 
         @include mobile {
@@ -23,50 +22,66 @@
         text-align: center;
         @include navigation__font;
 
-        .navigation__home-picture {
-            background: url(../img/navigation/home.png) no-repeat center;
+        .navigation__link {
+            @include navigation__link;
+        }
+
+        .navigation__menu-home {
+            padding: 20px 17px;
             @include navigation__picture;
         }
 
-        .navigation__statistics-picture {
-            background: url(../img/navigation/statistics.png) no-repeat center;
+        .navigation__menu-home:hover {
+            background: #c54556;
+        }
+
+        .navigation__menu-statistics {
+            padding: 20px 9px;
             @include navigation__picture;
         }
 
-        .navigation__users-picture {
-            background: url(../img/navigation/users.png) no-repeat center;
+        .navigation__menu-statistics:hover {
+            background: #c54556;
+        }
+
+        .navigation__menu-users {
+            padding: 20px 18px;
             @include navigation__picture;
         }
 
-        .navigation__settings-picture {
-            background: url(../img/navigation/settings.png) no-repeat center;
+        .navigation__menu-users:hover {
+            background: #c54556;
+        }
+
+        .navigation__menu-settings {
+            padding: 20px 11px;
             @include navigation__picture;
         }
 
-        .navigation__quires-picture {
-            background: url(../img/navigation/quires.png) no-repeat center;
+        .navigation__menu-settings:hover {
+            background: #c54556;
+        }
+
+        .navigation__menu-quires {
+            padding: 20px 15px;
+            margin-bottom: 92px;
             @include navigation__picture;
         }
-    }
-    
-    .navigation__link {
-        @include navigation__link;
-    }
 
-    .navigation__menu-element:hover {
-        background: #c54556;
-    
-        .navigation__menu-elemnt::after {
+        .navigation__menu-quires:hover {
+            background: #c54556;
+        }
+
+        .navigation__menu-quires::after {
             @include navigation__triangle;
         }
     }
 
     .navigation__button {
-        margin: 207px 0px 19px 23px;
-        padding: 10px;
+        padding: 20px 35px;
         border: none;
-        background: url(../img/navigation/button.png);
-}
+        background: url(../img/navigation/button.png) no-repeat center;
+    }
 
 
 }
