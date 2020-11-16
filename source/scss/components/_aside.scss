@@ -3,7 +3,6 @@
 
     @include mobile {
         margin: 0 auto;
-        width: 100%;
     }
 
     .aside__container {
@@ -13,6 +12,10 @@
         .aside__buttons {
             padding: 20px 0px;
             background: $gradient;
+
+                @include mobile {
+                    width: 414px;
+                }
 
             .aside__left-button {
                 border: none;

@@ -16,12 +16,24 @@
 
             @include mobile {
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
             }
 
             @include tablet {
                 display: flex;
                 flex-wrap: wrap;
+            }
+
+            .header__left-buttons {
+                @include mobile {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 5px 0px;
+                }
+
+                @include tablet {
+                    margin-left: 200px;
+                }
             }
 
             .header__menu {
@@ -45,6 +57,12 @@
                 margin-top: 20px;
                 margin-right: 40px;
 
+                @include mobile {
+                    position: absolute;
+                    top: 60px;
+                    margin: 30px 0px;
+                }
+
                 .header__search-box {
                     width: 300px;
                     font-size: 12px;
@@ -53,6 +71,13 @@
                     border-radius: 15px;
                     border: none;
                     background: #f8f8f8;
+
+                    @include tablet {
+                        position: absolute;
+                        top: 50px;
+                        right: 95px;
+                        width: 300px;
+                    }
             }
 
                 .header__submit-button {
@@ -64,6 +89,18 @@
                     background: url(../img/header/zoom-in.png);
                     cursor: pointer;
                     
+            }
+        }
+        .header__right-buttons {
+            @include mobile {
+                display: flex;
+                flex-direction: row;
+                margin: 30px 0px;
+            }
+
+            @include tablet {
+                position: absolute;
+                left: 450px;
             }
         }
 
@@ -86,6 +123,11 @@
             display: flex;
             flex-direction: row;
             font-family: $font;
+
+            @include tablet {
+                position: absolute;
+                top: 0;
+            }
         }
 
             .header__profile-description {
@@ -137,6 +179,10 @@
             display: flex;
             flex-direction: row;
 
+            @include tablet {
+                margin-top: 100px;
+            }
+
             .header__daily-part {
                 margin: 22px 30px 22px 43px;
 
@@ -173,14 +219,12 @@
                 margin-top: 32px;
 
                 .header__add-button {
+                    font-family: $font;
+                    font-weight: $font-regular;
                     padding: 0px 20px;
-                    border: none;
+                    text-decoration: none;
+                    color: #a83444;
                     background: url(../img/header/add.png) no-repeat left;
-
-                    .header__add-link {
-                        text-decoration: none;
-                        color: #a83444;
-                    }
                 }
         }
 
